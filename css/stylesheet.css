@@ -14,26 +14,49 @@ header {
   justify-content: space-evenly;
 }
 
+.logo {
+  height: 90px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  top: 90px;
+  background: #5e70d6;
+  z-index: 1000;
+  right: 0px;
+}
+
 nav ul {
   padding: 0px;
 }
 
 nav li {
-  padding: 20px 30px;
+  padding: 20px 10px;
   display: block;
 }
 
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+h1,
+h2,
+p {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2px;
+  margin: 0px;
+  font-size: 1.2em;
+}
+
 header,
+header a,
 footer {
   background-color: #5e70d6;
-}
-
-.logo {
-  height: 70px;
-}
-
-header a,
-footer div {
   color: #fff;
 }
 
@@ -41,10 +64,13 @@ footer div {
   max-width: 100%;
 }
 
-.copyright-placement {
-  align-items: center;
+footer span {
+  color: #000;
 }
 
+footer h2 {
+  font-size: 1em;
+}
 /* ############ */
 
 /* Links */
@@ -80,34 +106,38 @@ a {
 /* Home Page */
 
 .welcome-message {
-  padding: 100px 0px;
-}
-
-main p {
-  padding: 2px;
-  margin: 0px;
+  padding-top: 130px;
+  padding-bottom: 50px;
 }
 
 .browse-group {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 
 .register-group {
-  padding-top: 15px;
+  padding-bottom: 50px;
 }
 
 /* ############ */
 
 /* Media Queries */
 
-@media (min-width: 100px) {
+@media (min-width: 740px) {
   header {
-    transform: none;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    display: block;
+    position: static;
   }
 
   nav li {
     display: inline-block;
   }
-}
 
+  header label {
+    display: none;
+  }
+}
 /* ############ */
