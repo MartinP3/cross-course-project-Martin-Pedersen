@@ -1,0 +1,113 @@
+/* Global */
+body {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  padding: 20px 30px;
+  display: block;
+}
+
+header,
+footer {
+  background-color: #5e70d6;
+}
+
+.logo {
+  height: 70px;
+}
+
+header a,
+footer div {
+  color: #fff;
+}
+
+.footer-info {
+  max-width: 100%;
+}
+
+.copyright-placement {
+  align-items: center;
+}
+
+/* ############ */
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.cta {
+  background-color: #5e70d6;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.cta-small {
+  padding: 10px 20px;
+  font-size: 0.9em;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 161.22px;
+  text-align: center;
+}
+
+/* ############ */
+
+/* Home Page */
+
+.welcome-message {
+  padding: 100px 0px;
+}
+
+main p {
+  padding: 2px;
+  margin: 0px;
+}
+
+.browse-group {
+  padding-bottom: 15px;
+}
+
+.register-group {
+  padding-top: 15px;
+}
+
+/* ############ */
+
+/* Media Queries */
+
+@media (min-width: 100px) {
+  header {
+    transform: none;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+}
+
+/* ############ */
