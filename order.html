@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Login here to buy or sell games!" />
+  <meta name="description" content="Check your current orders on GameHub!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link href="css/stylesheet.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-  <title>GameHub | Login</title>
+  <title>GameHub | Orders</title>
 </head>
 <body>
   <header>
@@ -24,23 +24,19 @@
       </ul>
     </nav>
   </header>
-  <main class="loginpage">
-        <form method="post">
-            <div class="form-wrapper">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email"/>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password"/>
-            </div>
-        </form>
-        <p>Forgot your password? <a href="">Click here</a></p>
-        <a href="accountpage.html" class="cta cta-small">Log In</a>
-        <h4>Or log in through</h4>
-        <p>Google</p>
-        <a href="accountpage.html" class="cta-google cta-small">Login</a>
-        <p>Facebook</p>
-        <a href="accountpage.html" class="cta-facebook cta-small">Login</a>
-        <h5>Don't have an account? <a href="createaccount.html">Sign up</a></h5>
+  <main class="orderpage">
+    <h1>My Order</h1>
+    <div class="product-image">
+      <img src="images/sm64.png" alt="Mario flying with wings and 'Super Mario 64' on the image">
+    </div>
+    <h2>Super Mario 64</h2>
+    <div class="container">
+      <p class="orderinfo">Price: <span class="price">$14.99</span></p>
+      <p class="orderinfo">Shipping: <span class="price">$4.99</span></p>
+      <hr>
+      <p class="orderinfo">Total: <span class="price">$19.98</span></p>
+    </div>
+    <a href="checkout.html" class="cta cta-small">Checkout</a>
   </main>
   <footer class="footer-info">
     <h2>Contact Us</h2>

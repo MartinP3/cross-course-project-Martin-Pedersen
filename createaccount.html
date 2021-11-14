@@ -18,20 +18,33 @@
     <nav>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="">List of Games</a></li>
-        <li><a href="">My Account</a></li>
-        <li><a href="">Checkout</a></li>
-        <li><a href="">Sell Games</a></li>
-        <li><a href="">Past Orders</a></li>
+        <li><a href="listofgames.html">List of Games</a></li>
+        <li><a href="accountpage.html">My Account</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-
+  <main class="createaccountpage">
+    <form method="post">
+        <div class="form-wrapper">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username"/>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email"/>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"/>
+            <label for="verifypassword">Verify Password</label>
+            <input type="password" id="verifypassword" name="verifypassword"/>
+        </div>
+    </form>
+    <a href="login.html" class="cta cta-small">Create Account</a>
+    <p>Already have an account? <a href="login.html">Log in</a></p>
   </main>
   <footer class="footer-info">
-      <h2>Contact Us</h2>
-        Chat Mon-Fri <span>09:00 - 20:00</span> | Phone Mon-Fri <span>09:00 - 20:00</span> | Email contact@gamehub.com 
+    <h2>Contact Us</h2>
+      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
+      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
+      <p>Email: contact@gamehub.com</p>
   </footer>
 </body>
 </html>

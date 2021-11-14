@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Proceed with your purchase through this checkout!" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="css/stylesheet.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+  <title>GameHub | Checkout</title>
+</head>
+<body>
+  <header>
+    <img src="images/GameHub_Logo.png" alt="GameHub Logo" class="logo" />
+    <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu"  />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listofgames.html">List of Games</a></li>
+        <li><a href="accountpage.html">My Account</a></li>
+        <li><a href="checkout.html" class="active">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="row">
+      <div class="co-info"> <!--co = checkout-->
+        <div class="container">
+          <form method="post">   
+            <div class="row">
+              <div class="co-groups">
+                <h1>Shipping Address</h1>
+                <label for="name">  Full name</label>
+                <input type="text" id="name" name="name">
+                <label for="email"> Email</label>
+                <input type="text" id="email" name="email">
+                <label for="adress">  Address</label>
+                <input type="text" id="adress" name="address">
+                <label for="city">  City</label>
+                <input type="text" id="city" name="city">
+    
+                <div class="row">
+                  <div class="co-groups">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="zip" name="zip">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="co-groups">
+                <h3>Payment information</h3>
+                <label for="cname">Full Name</label>
+                <input type="text" id="cname" name="cardname">
+                <label for="ccnum">Credit Card Number</label>
+                <input type="text" id="ccnum" name="cardnumber">
+                <div>
+                  
+                </div>
+                <label for="expmonth">Expiry Month</label>
+                <input type="text" id="expmonth" name="expmonth">
+                <div class="row">
+                  <div class="co-groups">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear">
+                  </div>
+                  <div class="co-groups">
+                    <label for="ccv">CCV</label>
+                    <input type="text" id="ccv" name="ccv">
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            <a href="#" class="cta cta-small">Purchase</a>
+          </form>
+        </div>
+      </div>
+    
+      <div class="co-product">
+        <div class="container">
+          <h4>Cart</h4>
+          <p class="cart-info"><a href="#">Super Mario 64</a> <span class="price">$14.99</span></p>
+          <p class="cart-info"><a href="#">Shipping</a> <span class="price">$4.99</span></p>
+          <hr>
+          <p class="cart-info">Total <span class="price">$19.98</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-info">
+    <h2>Contact Us</h2>
+      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
+      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
+      <p>Email: contact@gamehub.com</p>
+  </footer>
+</body>
+</html>

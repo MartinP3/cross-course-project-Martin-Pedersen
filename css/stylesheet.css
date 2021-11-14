@@ -16,6 +16,11 @@ header {
 
 .logo {
   height: 90px;
+  max-width: 150px;
+}
+
+img {
+  width: 100%;
 }
 
 nav {
@@ -44,6 +49,10 @@ nav li {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 h1,
 h2,
 p {
@@ -62,6 +71,8 @@ footer {
 
 .footer-info {
   max-width: 100%;
+  align-items: center;
+  padding: 10px 0px;
 }
 
 footer span {
@@ -71,6 +82,25 @@ footer span {
 footer h2 {
   font-size: 1em;
 }
+
+.product-image {
+  max-width: 500px;
+  border: 2px solid black;
+  margin: 2em;
+}
+
+span.price {
+  display: flex;
+  float: right;
+  color: #5e70d6;
+}
+
+.container {
+  padding: 0.5em 1.5em;
+  margin: 1em 2em;
+  border: 1px solid grey;
+}
+
 /* ############ */
 
 /* Links */
@@ -92,13 +122,50 @@ a {
   display: inline-block;
 }
 
+.cta-google {
+  background-color: #db4437;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.cta-facebook {
+  background-color: #3b5998;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 15px;
+  display: inline-block;
+}
+
 .cta-small {
   padding: 10px 20px;
   font-size: 0.9em;
   grid-column: 2;
   grid-row: 2;
-  min-width: 161.22px;
+  min-width: 160px;
+  max-width: 160px;
+  max-height: 2em;
   text-align: center;
+}
+
+div input {
+  margin-bottom: 10px;
+  padding: 0.3em;
+}
+
+input[type="text"],
+input[type="zip"],
+input[type="password"] {
+  width: 100%;
+  margin-bottom: 0.3em;
+  padding: 0.7em;
+  border: 2px solid grey;
+  border-radius: 7px;
+  max-width: 50%;
+  max-width: 270px;
 }
 
 /* ############ */
@@ -106,23 +173,197 @@ a {
 /* Home Page */
 
 .welcome-message {
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding-top: 6em;
+  padding-bottom: 3em;
 }
 
 .browse-group {
-  padding-bottom: 30px;
+  padding-bottom: 3em;
 }
 
 .register-group {
   padding-bottom: 50px;
 }
 
+.browse-group h2,
+.register-group h2 {
+  padding-bottom: 0.5em;
+}
+
+/* ############ */
+
+/* Create Account Page */
+
+.createaccountpage {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+main form {
+  padding: 10px;
+}
+
+.accountpage h1 {
+  font-size: 2em;
+}
+
+/* ############ */
+
+/* Login page */
+
+.loginpage {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.loginpage p {
+  padding-top: 10px;
+}
+
+.loginpage p a,
+.loginpage h5 a,
+.productpage span,
+.product-desc span {
+  color: #3b5998;
+}
+
+/* ############ */
+
+/* Account page */
+
+.accountpage {
+  max-width: 1000px;
+  margin: 6em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountpage a {
+  margin: 2em;
+}
+/* ############ */
+
+/* Product Page */
+
+.productpage {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.product-desc p,
+a {
+  text-align: start;
+  max-width: 450px;
+  margin: 0.2em;
+}
+
+/* ############ */
+
+.listofgamespage {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.listofgamespage hr {
+  margin: 2em 0;
+}
+
+/* Order Page */
+
+.orderpage {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.orderinfo {
+  text-align: start;
+}
+
+.orderinfo .price {
+  margin-left: 5em;
+}
+
+.orderpage h1 {
+  font-size: 2em;
+}
+
+/* ############ */
+
+/* Checkout Page */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0.2em;
+  gap: 0.3em;
+}
+
+.co-product {
+  flex: 25%;
+}
+
+.co-groups {
+  flex: 50%;
+}
+
+.co-info {
+  flex: 70%;
+}
+
+.co-product,
+.co-groups,
+.coinfo {
+  margin: 0.1em;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.cart-info {
+  text-align: start;
+  color: #000;
+}
+
+/* ############ */
+
+/* Forms */
+
+.form-wrapper {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* ############ */
 
 /* Media Queries */
 
-@media (min-width: 740px) {
+@media (max-width: 400px) {
+  .orderinfo .price {
+    margin-left: 2em;
+  }
+}
+@media (min-width: 600px) {
   header {
     justify-content: space-evenly;
   }
@@ -140,4 +381,19 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 1050px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1200px) {
+  .row {
+    flex-direction: column-reverse;
+    max-width: 1000px;
+    padding: 0 10%;
+  }
+}
+
 /* ############ */
