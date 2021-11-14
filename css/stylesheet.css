@@ -358,6 +358,7 @@ label {
 
 /* Media Queries */
 
+/*I couldn't quite figure this one out unfortunately, outside of as a media query.*/
 @media (max-width: 400px) {
   .orderinfo .price {
     margin-left: 2em;
