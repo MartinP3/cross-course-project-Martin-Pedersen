@@ -1,0 +1,43 @@
+.aboutUsPage {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+}
+
+.aboutUsPage h1 {
+  font-size: 2em;
+  margin-bottom: 0.2em;
+}
+
+.location-info,
+.origin-story,
+.our-purpose {
+  max-width: 600px;
+  margin-bottom: 0.5em;
+}
+
+.location-info p,
+.origin-story p,
+.our-purpose p {
+  text-align: left;
+}
+.container {
+  max-width: 600px;
+  margin: 1em auto;
+  border: 1px solid grey;
+}
+
+label {
+  padding-left: 6em;
+}
+
+form input,
+label {
+  max-width: 300px;
+  text-align: left;
+}
+form h2 {
+  margin-bottom: 1em;
+}

@@ -6,7 +6,8 @@
   <meta name="description" content="Login here to buy or sell games!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/login.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   <title>GameHub | Login</title>
 
@@ -31,7 +32,6 @@
     <input type="checkbox" id="hamburger-menu"  />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="listofgames.html">List of Games</a></li>
         <li><a href="accountpage.html">My Account</a></li>
         <li><a href="checkout.html">Checkout</a></li>
@@ -39,13 +39,21 @@
     </nav>
   </header>
   <main class="loginpage">
-        <form method="post">
-            <div class="form-wrapper">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email"/>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password"/>
-            </div>
+        <form id="form">
+          <div>
+            <label>
+              Email
+              <input name="email" id="email" />
+              <div class="form-error" id="emailError">Please enter a valid email we can contact you with.</div>
+            </label>
+          </div>
+          <div>
+            <label>
+              Password
+              <input name="password" id="password" type="password"/>
+              <div class="form-error" id="passwordError">Please enter the correct password.</div>
+            </label>
+          </div>
         </form>
         <p>Forgot your password? <a href="">Click here</a></p>
         <a href="accountpage.html" class="cta cta-small">Log In</a>
@@ -56,11 +64,10 @@
         <a href="accountpage.html" class="cta-facebook cta-small">Login</a>
         <h5>Don't have an account? <a href="createaccount.html">Sign up</a></h5>
   </main>
+  <script src="js/login.js"></script>
   <footer class="footer-info">
-    <h2>Contact Us</h2>
-      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Email: contact@gamehub.com</p>
+    <h1><a href="aboutus.html">Contact Us</a></h1>
+      <p>contact@gamehub.com</p>
   </footer>
 </body>
 </html>

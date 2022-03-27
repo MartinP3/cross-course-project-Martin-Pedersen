@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0.2em;
+  gap: 0.3em;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.cart-info {
+  text-align: start;
+  color: #000;
+}
+
+.container {
+  padding: 0.5em 1.5em;
+  margin: 1em 2em;
+  border: 1px solid grey;
+}

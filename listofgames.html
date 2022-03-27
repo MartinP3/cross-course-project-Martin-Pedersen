@@ -6,9 +6,10 @@
   <meta name="description" content="Check out the catalog of games available on Gamehub currently!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/listofgames.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-  <title>GameHub | List of Games</title>
+  <title>GameHub | Games</title>
 
   <!-- Hotjar Tracking Code for https://dazzling-feynman-211a4d.netlify.app/ -->
 <script>
@@ -31,59 +32,22 @@
     <input type="checkbox" id="hamburger-menu"  />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="listofgames.html" class="active">List of Games</a></li>
         <li><a href="accountpage.html">My Account</a></li>
         <li><a href="checkout.html">Checkout</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <section class="listofgamespage">
-      <div class="product-image">
-        <img src="images/sm64.jpg" alt="Mario flying with wings and 'Super Mario 64' on the image">
-      </div>
-      <div class="product-desc">
-        <h1>Super Mario 64</h1>
-        <p>sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum</p>
-        <p>Tags: <span>Adventure, Exploring, Baking, Puzzles, BLJs</span></p>
-        <h4>Price<span> $14.99</span></h4>
-        <a href="" class="cta cta-small">Add to Cart</a>
-        <a href="product.html" class="cta cta-small">More information</a>
-        <hr>
-      </div>
-
-      <div class="product-image">
-        <img src="images/sm64.jpg" alt="Mario flying with wings and 'Super Mario 64' on the image">
-      </div>
-      <div class="product-desc">
-        <h1>Super Mario 64</h1>
-        <p>sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum</p>
-        <p>Tags: <span>Adventure, Exploring, Baking, Puzzles, BLJs</span></p>
-        <h4>Price<span> $14.99</span></h4>
-        <a href="" class="cta cta-small">Add to Cart</a>
-        <a href="product.html" class="cta cta-small">More information</a>
-        <hr>
-      </div>
-
-      <div class="product-image">
-        <img src="images/sm64.jpg" alt="Mario flying with wings and 'Super Mario 64' on the image">
-      </div>
-      <div class="product-desc">
-        <h1>Super Mario 64</h1>
-        <p>sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum sugar plum gingerbread biscuit lemon drops oat cake. Tiramisu cake chocolate sugar plum</p>
-        <p>Tags: <span>Adventure, Exploring, Baking, Puzzles, BLJs</span></p>
-        <h4>Price<span> $14.99</span></h4>
-        <a href="" class="cta cta-small">Add to Cart</a>
-        <a href="product.html" class="cta cta-small">More information</a>
-      </div>
+      <h1>Featured Games</h1>
+      <div class="gamesList"></div>
     </section>
   </main>
+  <script src="js/script.js"></script>
   <footer class="footer-info">
-    <h2>Contact Us</h2>
-      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Email: contact@gamehub.com</p>
+    <h1><a href="aboutus.html">Contact Us</a></h1>
+      <p>contact@gamehub.com</p>
   </footer>
 </body>
 </html>

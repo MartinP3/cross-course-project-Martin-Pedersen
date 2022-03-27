@@ -6,7 +6,8 @@
   <meta name="description" content="Proceed with your purchase through this checkout!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/checkout.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   <title>GameHub | Checkout</title>
 
@@ -31,7 +32,6 @@
     <input type="checkbox" id="hamburger-menu"  />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="listofgames.html">List of Games</a></li>
         <li><a href="accountpage.html">My Account</a></li>
         <li><a href="checkout.html" class="active">Checkout</a></li>
@@ -41,53 +41,85 @@
   <main>
     <div class="row">
       <div class="co-info"> <!--co = checkout-->
-        <div class="container">
-          <form method="post">   
-            <div class="row">
-              <div class="co-groups">
+        <div class="container">   
+              <form id="form">
                 <h1>Shipping Address</h1>
-                <label for="name">  Full name</label>
-                <input type="text" id="name" name="name">
-                <label for="email"> Email</label>
-                <input type="text" id="email" name="email">
-                <label for="adress">  Address</label>
-                <input type="text" id="adress" name="address">
-                <label for="city">  City</label>
-                <input type="text" id="city" name="city">
-    
-                <div class="row">
-                  <div class="co-groups">
-                    <label for="postal-code">Postal Code</label>
-                    <input type="text" id="zip" name="zip">
-                  </div>
+                <div class="form-success" id="form-success">You have succesfully filled out the form!</div>
+                <div>
+                  <label>
+                    Full Name (required)
+                    <input name="fullName" id="fullName" />
+                    <div class="form-error" id="fullNameError">Please put in your full name.</div>
+                  </label>
                 </div>
-              </div>
-              
+                <div>
+                  <label>
+                    Email (required)
+                    <input name="email" id="email" />
+                    <div class="form-error" id="emailError">Please enter a valid email we can contact you with.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Address (required)
+                    <input name="address" id="address" />
+                    <div class="form-error" id="addressError">Please enter the addres you want it shipped to.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    City (required)
+                    <input name="city" id="city" />
+                    <div class="form-error" id="cityError">Please enter your city.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Postal Code (required)
+                    <input name="postalCode" id="postalCode" />
+                    <div class="form-error" id="postalCodeError">Please enter your city.</div>
+                  </label>
+                </div>
               <div class="co-groups">
                 <h3>Payment information</h3>
-                <label for="cname">Full Name</label>
-                <input type="text" id="cname" name="cardname">
-                <label for="ccnum">Credit Card Number</label>
-                <input type="text" id="ccnum" name="cardnumber">
                 <div>
-                  
+                  <label>
+                    Full Name (required)
+                    <input name="cName" id="cName" />
+                    <div class="form-error" id="cNameError">Please enter your full name.</div>
+                  </label>
                 </div>
-                <label for="expmonth">Expiry Month</label>
-                <input type="text" id="expmonth" name="expmonth">
-                <div class="row">
-                  <div class="co-groups">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear">
-                  </div>
-                  <div class="co-groups">
-                    <label for="ccv">CCV</label>
-                    <input type="text" id="ccv" name="ccv">
-                  </div>
+                <div>
+                  <label>
+                    Credit Card Number (required)
+                    <input name="ccNo" id="ccNo" />
+                    <div class="form-error" id="ccNoError">Please enter your credit card number.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Expiry Month (required)
+                    <input name="expMonth" id="expMonth" />
+                    <div class="form-error" id="expMonthError">Please enter your credit card's expiry month.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Expiry Year (required)
+                    <input name="expYear" id="expYear" />
+                    <div class="form-error" id="expYearError">Please enter your credit card's expiry year.</div>
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    CCV (required)
+                    <input name="ccv" id="ccv" />
+                    <div class="form-error" id="ccvError">Please enter your credit card's CCV.</div>
+                  </label>
                 </div>
               </div>
-    
-            </div>
-            <a href="#" class="cta cta-small">Purchase</a>
+
+            <button>Purchase</button>
           </form>
         </div>
       </div>
@@ -95,7 +127,7 @@
       <div class="co-product">
         <div class="container">
           <h4>Cart</h4>
-          <p class="cart-info"><a href="#">Super Mario 64</a> <span class="price">$14.99</span></p>
+          <p class="cart-info"><a href="#"><span class="gamesList">Super Mario 64</span></a> <span class="price">$14.99</span></p>
           <p class="cart-info"><a href="#">Shipping</a> <span class="price">$4.99</span></p>
           <hr>
           <p class="cart-info">Total <span class="price">$19.98</span></p>
@@ -103,11 +135,10 @@
       </div>
     </div>
   </main>
+  <script src="js/checkout.js"></script>
   <footer class="footer-info">
-    <h2>Contact Us</h2>
-      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Email: contact@gamehub.com</p>
+    <h1><a href="aboutus.html">Contact Us</a></h1>
+      <p>contact@gamehub.com</p>
   </footer>
 </body>
 </html>

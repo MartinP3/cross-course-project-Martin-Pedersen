@@ -1,0 +1,40 @@
+.accountpage {
+  max-width: 1000px;
+  margin: 2em auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountpage a {
+  margin: 2em;
+}
+table {
+  margin-top: 1em;
+  border-spacing: 1px;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+td,
+th {
+  border: 1px solid #4d4d4d;
+  text-align: left;
+  padding: 8px 10px;
+}
+
+table caption {
+  font-size: 1.2em;
+}
+
+.shipping-info {
+  margin-top: 2em;
+}
+
+.shipping-info p {
+  text-align: left;
+}

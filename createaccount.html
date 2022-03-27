@@ -6,7 +6,8 @@
   <meta name="description" content="Create an account to join in on the bargains!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/createaccount.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   <title>GameHub | Create Account</title>
 
@@ -31,7 +32,6 @@
     <input type="checkbox" id="hamburger-menu"  />
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="listofgames.html">List of Games</a></li>
         <li><a href="accountpage.html">My Account</a></li>
         <li><a href="checkout.html">Checkout</a></li>
@@ -39,26 +39,43 @@
     </nav>
   </header>
   <main class="createaccountpage">
-    <form method="post">
-        <div class="form-wrapper">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username"/>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email"/>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"/>
-            <label for="verifypassword">Verify Password</label>
-            <input type="password" id="verifypassword" name="verifypassword"/>
+    <form id="form">
+      <div>
+        <div>
+          <label>
+            Username
+            <input name="username" id="username" />
+            <div class="form-error" id="usernameError">Please put in your username.</div>
+          </label>
         </div>
+        <label>
+          Email
+          <input name="email" id="email" />
+          <div class="form-error" id="emailError">Please enter a valid email we can contact you with.</div>
+        </label>
+      </div>
+      <div>
+        <label>
+          Password
+          <input name="password" id="password" type="password"/>
+          <div class="form-error" id="passwordError">Please enter the correct password.</div>
+        </label>
+      </div>
+      <div>
+        <label>
+          Verify Password
+          <input name="password2" id="password2" type="password"/>
+          <div class="form-error" id="password2Error">Please enter the correct password.</div>
+        </label>
+      </div>
     </form>
     <a href="login.html" class="cta cta-small">Create Account</a>
     <p>Already have an account? <a href="login.html">Log in</a></p>
   </main>
+  <script src="js/createaccount.js"></script>
   <footer class="footer-info">
-    <h2>Contact Us</h2>
-      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Email: contact@gamehub.com</p>
+    <h1><a href="aboutus.html">Contact Us</a></h1>
+      <p>contact@gamehub.com</p>
   </footer>
 </body>
 </html>

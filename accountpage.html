@@ -6,7 +6,8 @@
   <meta name="description" content="Account related information here!" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <link href="css/stylesheet.css" rel="stylesheet" />
+  <link href="css/global.css" rel="stylesheet" />
+  <link href="css/accountpage.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   <title>GameHub | My Account</title>
 
@@ -31,7 +32,6 @@
     <input type="checkbox" id="hamburger-menu"  />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li><a href="listofgames.html">List of Games</a></li>
         <li><a href="accountpage.html" class="active">My Account</a></li>
         <li><a href="checkout.html">Checkout</a></li>
@@ -39,16 +39,43 @@
     </nav>
   </header>
   <main class="accountpage">
-    <h1>Account Information</h1>
-    <a href="listofgames.html" class="cta cta-small">Browse Games</a>
-    <a href="order.html" class="cta cta-small">My Order</a>
-    <a href="index.html" class="cta cta-small">Log Out</a>
+    <section>
+      <h1>Account Information</h1>
+      <div>
+        <table>
+          <caption>Past Orders</caption>
+          <tr>
+            <th>Date</th>
+            <th>Order #</th>
+            <th>Item</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>26.03.2022</td>
+            <td>#GH0002</td>
+            <td>Super Mario 64</td>
+            <td>Shipped</td>
+          </tr>
+          <tr>
+            <td>14.02.2022</td>
+            <td>#GH0001</td>
+            <td>Sly 3</td>
+            <td>Fulfilled</td>
+          </tr>
+        </table>
+      </div>
+      <div class="shipping-info">
+        <h2>Shipping information</h2>
+        <p>Martin Pedersen</p>
+        <p>Geila 21</p>
+        <p>6098 Nerlandsøy</p>
+        <p>Norway</p>
+      </div>
+    </section>
   </main>
   <footer class="footer-info">
-    <h2>Contact Us</h2>
-      <p>Chat: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Phone: Mon-Fri <span>09:00 - 20:00</span></p>
-      <p>Email: contact@gamehub.com</p>
+    <h1><a href="aboutus.html">Contact Us</a></h1>
+      <p>contact@gamehub.com</p>
   </footer>
 </body>
 </html>

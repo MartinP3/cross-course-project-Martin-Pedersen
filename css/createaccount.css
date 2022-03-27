@@ -1,0 +1,13 @@
+.createaccountpage {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+main form {
+  padding: 10px;
+}
+
+.accountpage h1 {
+  font-size: 2em;
+}

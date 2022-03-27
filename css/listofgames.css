@@ -1,0 +1,21 @@
+/* Games list */
+
+.listofgamespage {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.listofgamespage hr {
+  margin: 2em 0;
+}
+
+.gamesList {
+  min-width: 600px;
+}
+
+a {
+  color: black;
+}

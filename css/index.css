@@ -1,0 +1,21 @@
+/* Home Page */
+
+.welcome-message {
+  padding-top: 6em;
+  padding-bottom: 3em;
+}
+
+.browse-group {
+  padding-bottom: 3em;
+}
+
+.register-group {
+  padding-bottom: 50px;
+}
+
+.browse-group h2,
+.register-group h2 {
+  padding-bottom: 0.5em;
+}
+
+/* ############ */

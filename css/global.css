@@ -64,7 +64,8 @@ p {
 
 header,
 header a,
-footer {
+footer,
+footer a {
   background-color: #5e70d6;
   color: #fff;
 }
@@ -75,18 +76,8 @@ footer {
   padding: 10px 0px;
 }
 
-footer span {
-  color: #000;
-}
-
-footer h2 {
+footer h1 {
   font-size: 1em;
-}
-
-.product-image {
-  max-width: 500px;
-  border: 2px solid black;
-  margin: 2em;
 }
 
 span.price {
@@ -95,10 +86,25 @@ span.price {
   color: #5e70d6;
 }
 
-.container {
-  padding: 0.5em 1.5em;
-  margin: 1em 2em;
-  border: 1px solid grey;
+.image {
+  height: 250px;
+  max-width: 700px;
+  background-size: cover;
+  background-position: center top;
+}
+
+.column {
+  float: left;
+  width: 47%;
+  overflow: auto;
+  padding: 0px 3px;
+  margin: 5px 3px;
+  border: black solid 1px;
+  background-color: beige;
+}
+.row:after {
+  content: "";
+  clear: both;
 }
 
 /* ############ */
@@ -107,6 +113,11 @@ span.price {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .active {
@@ -154,11 +165,11 @@ a {
 div input {
   margin-bottom: 10px;
   padding: 0.3em;
+  display: block;
 }
 
 input[type="text"],
-input[type="zip"],
-input[type="password"] {
+input[type="zip"] {
   width: 100%;
   margin-bottom: 0.3em;
   padding: 0.7em;
@@ -170,177 +181,17 @@ input[type="password"] {
 
 /* ############ */
 
-/* Home Page */
-
-.welcome-message {
-  padding-top: 6em;
-  padding-bottom: 3em;
-}
-
-.browse-group {
-  padding-bottom: 3em;
-}
-
-.register-group {
-  padding-bottom: 50px;
-}
-
-.browse-group h2,
-.register-group h2 {
-  padding-bottom: 0.5em;
-}
-
-/* ############ */
-
-/* Create Account Page */
-
-.createaccountpage {
-  max-width: 1000px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-main form {
-  padding: 10px;
-}
-
-.accountpage h1 {
-  font-size: 2em;
-}
-
-/* ############ */
-
-/* Login page */
-
-.loginpage {
-  max-width: 1000px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.loginpage p {
-  padding-top: 10px;
-}
-
-.loginpage p a,
-.loginpage h5 a,
-.productpage span,
-.product-desc span {
-  color: #3b5998;
-}
-
-/* ############ */
-
-/* Account page */
-
-.accountpage {
-  max-width: 1000px;
-  margin: 6em auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.accountpage a {
-  margin: 2em;
-}
-/* ############ */
-
-/* Product Page */
-
-.productpage {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em 0;
-}
-
-.product-desc p,
-a {
-  text-align: start;
-  max-width: 450px;
-  margin: 0.2em;
-}
-
-/* ############ */
-
-.listofgamespage {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em 0;
-}
-
-.listofgamespage hr {
-  margin: 2em 0;
-}
-
-/* Order Page */
-
-.orderpage {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2em 0;
-}
-
-.orderinfo {
-  text-align: start;
-}
-
-.orderinfo .price {
-  margin-left: 5em;
-}
-
-.orderpage h1 {
-  font-size: 2em;
-}
-
-/* ############ */
-
-/* Checkout Page */
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 1em 0.2em;
-  gap: 0.3em;
-}
-
-.co-product {
-  flex: 25%;
-}
-
-.co-groups {
-  flex: 50%;
-}
-
-.co-info {
-  flex: 70%;
-}
-
-.co-product,
-.co-groups,
-.coinfo {
-  margin: 0.1em;
-}
-
-label {
-  margin-bottom: 5px;
-  display: block;
-}
-
-.cart-info {
-  text-align: start;
-  color: #000;
-}
-
-/* ############ */
-
 /* Forms */
+input,
+textarea {
+  width: 100%;
+  margin: 4px 0px;
+  padding: 12px;
+  font-size: 1em;
+  max-width: 500px;
+  border-radius: 7px;
+  border: 2px solid grey;
+}
 
 .form-wrapper {
   display: flex;
@@ -352,6 +203,36 @@ label {
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+form {
+  padding: 1em;
+  max-width: 700px;
+}
+
+label {
+  display: block;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  margin-bottom: 5px;
+}
+
+.form-success {
+  display: none;
+  color: green;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 5px;
+  padding: 1rem;
+  width: 200px;
+  background-color: #5e70d6;
+  color: white;
+  cursor: pointer;
 }
 
 /* ############ */
@@ -380,6 +261,15 @@ label {
 
   header label {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    float: none;
+    border: none;
+    margin-bottom: 10px;
+    background-color: white;
   }
 }
 
