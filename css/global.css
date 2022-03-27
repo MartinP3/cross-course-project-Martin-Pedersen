@@ -100,7 +100,7 @@ span.price {
   padding: 0px 3px;
   margin: 5px 3px;
   border: black solid 1px;
-  background-color: beige;
+  background-color: #5e70d6;
 }
 .row:after {
   content: "";
