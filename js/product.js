@@ -32,6 +32,7 @@ function addGames(game) {
         <h2>Ratings</h2>
         <p>Metacritic has rated it: ${game.metacritic}</p>
         <p>And user have rated it an average of: ${game.rating}</p>
+        <p>Price: <b>$14.99</b></p>
         <a href="checkout.html?id=${game.id}" class="cta cta-small">Purchase</a>
         </div>`;
 }
