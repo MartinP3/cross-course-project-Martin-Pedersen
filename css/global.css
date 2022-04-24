@@ -87,16 +87,14 @@ span.price {
 }
 
 .image {
-  height: 250px;
-  max-width: 700px;
-  background-size: cover;
-  background-position: center top;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .column {
   float: left;
   width: 47%;
-  overflow: auto;
   padding: 0px 3px;
   margin: 5px 3px;
   border: black solid 1px;

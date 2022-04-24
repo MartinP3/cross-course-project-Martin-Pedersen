@@ -1,6 +1,6 @@
 const gamesContainer = document.querySelector(".gamesList");
 
-const url = "https://api.rawg.io/api/games?key=1910b7a1d43a48428eb30a50747fbee0";
+const url = "https://martinwebdev.site/cross-course/wp-json/wc/store/products";
 
 async function fetchGames() {
 
@@ -10,20 +10,19 @@ async function fetchGames() {
 
         gamesContainer.innerHTML = "";
 
-        const games = results.results;
+        const games = results;
         console.log(games);
-        
+
         games.forEach(function(game) {
             gamesContainer.innerHTML +=
                 `<div class="row product">
                 <a href="product.html?id=${game.id}" class="column">
-                    <div class="image" style="background-image: url(${game.background_image})"></div>
-                    <div>
-                    <h4 class="name">${game.name}</h4>                
+                    <div class="image"><img src="${game.images[0].src}"/></div>
+                    <div>       
+                    <h4 class="name" style="color: white">${game.name}</h4>         
                     </div>
                 </a></div>`;
-        });
-      
+        }); 
     }
     catch(error) {
         console.log(error);
